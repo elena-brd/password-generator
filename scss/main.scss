@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$primary: #f8f2eb;
+$grey-color: #e8e3e3;
+$secondary: #fec89a;
+$secondary-purple: #d39bff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: $primary;
+    color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: auto;
+    // margin: 0 auto;
+}
+
+.change-theme {
+    margin-bottom: 5rem;
+}
+
+.password-box {
+    width: 350px;
+    background: #fff;
+    box-shadow: 0px 4px 10px 8px rgba($color: #fec89a, $alpha: 0.8);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+
+    h2 {
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+.password-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $grey-color;
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
+
+    #result {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    label {
+        font-weight: 500;
+    }
+
+    input {
+        cursor: pointer;
+    }
+
+    input[type="number"] {
+        outline: none;
+        border: 2px solid $secondary;
+        padding: 0.1rem 0.3rem;
+        border-radius: 5px;
+    }
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+
+    &-clipboard {
+        background: $secondary-purple;
+        padding: 0.7rem 0.85rem;
+    }
+
+    &-generate {
+        background: $secondary-purple;
+        width: 100%;
+        padding: 0.6rem 0;
+        border-radius: 5px;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+
+    &-theme {
+        background: $secondary;
+        padding: 0.7rem 0.85rem;
+        border-radius: 5px;
+        box-shadow: 0px 0.5px 2px 2px rgba($color: #d39bff, $alpha: 0.8);
+    }
+}
+
+.dark-mode {
+    background: #333;
+    color: #f4f4f4;
+    box-shadow: 0px 1px 15px 2px rgba($color: #7903d3, $alpha: 0.8);
+}
